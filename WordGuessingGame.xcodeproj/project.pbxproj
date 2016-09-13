@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078AF19F1D87A9300042AA6B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AF19E1D87A9300042AA6B /* HelpViewController.swift */; };
 		07C83AEE1D878780009955BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83AED1D878780009955BE /* AppDelegate.swift */; };
 		07C83AF01D878780009955BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83AEF1D878780009955BE /* ViewController.swift */; };
 		07C83AF31D878780009955BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C83AF11D878780009955BE /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		078AF19E1D87A9300042AA6B /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		07C83AEA1D878780009955BE /* WordGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C83AED1D878780009955BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C83AEF1D878780009955BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,15 +62,16 @@
 		07C83AEC1D878780009955BE /* WordGuessingGame */ = {
 			isa = PBXGroup;
 			children = (
+				07C83AED1D878780009955BE /* AppDelegate.swift */,
+				07C83AF41D878780009955BE /* Assets.xcassets */,
 				07C83AFF1D8788D8009955BE /* BlockManager.swift */,
 				07C83B001D8788D8009955BE /* BlockUIView.swift */,
-				07C83B011D8788D8009955BE /* WordList.swift */,
-				07C83AED1D878780009955BE /* AppDelegate.swift */,
-				07C83AEF1D878780009955BE /* ViewController.swift */,
-				07C83AF11D878780009955BE /* Main.storyboard */,
-				07C83AF41D878780009955BE /* Assets.xcassets */,
-				07C83AF61D878780009955BE /* LaunchScreen.storyboard */,
+				078AF19E1D87A9300042AA6B /* HelpViewController.swift */,
 				07C83AF91D878780009955BE /* Info.plist */,
+				07C83AF61D878780009955BE /* LaunchScreen.storyboard */,
+				07C83AF11D878780009955BE /* Main.storyboard */,
+				07C83AEF1D878780009955BE /* ViewController.swift */,
+				07C83B011D8788D8009955BE /* WordList.swift */,
 			);
 			path = WordGuessingGame;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C83B031D8788D8009955BE /* BlockUIView.swift in Sources */,
+				078AF19F1D87A9300042AA6B /* HelpViewController.swift in Sources */,
 				07C83AF01D878780009955BE /* ViewController.swift in Sources */,
 				07C83AEE1D878780009955BE /* AppDelegate.swift in Sources */,
 				07C83B021D8788D8009955BE /* BlockManager.swift in Sources */,
@@ -300,6 +304,7 @@
 				07C83AFE1D878780009955BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
