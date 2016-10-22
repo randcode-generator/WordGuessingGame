@@ -19,8 +19,19 @@ class BlockUIView: UIView {
     weak var delegate: BlockUIViewDelegate?
     
     init(letter: String) {
-        let x = CGFloat(arc4random_uniform(300)) + 10
-        let y = CGFloat(arc4random_uniform(300)) + 10
+        let screenWidth: CGFloat = UIScreen.main.bounds.size.width
+        let screenHeight: CGFloat = UIScreen.main.bounds.size.height
+        
+        var x = CGFloat(arc4random_uniform(UInt32(screenWidth - 100)))
+        var y = CGFloat(arc4random_uniform(UInt32(screenHeight - 300)))
+        
+        if x < 50 {
+            x = 50
+        }
+        if y < 50 {
+            y = 50
+        }
+        
         super.init(frame: CGRect(x: x, y: y, width: 45, height: 45));
         
         backgroundImage.image = UIImage(named: "wood");
