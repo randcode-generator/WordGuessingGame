@@ -25,13 +25,13 @@ class BlockManager {
         self.blockHolder = blockHolder
     }
     
-    func add(block: BlockUIView) {
+    func add(_ block: BlockUIView) {
         blocks.append(block)
         
         currentWord = ""
         var x = startingX
         for blockItem in blocks {
-            blockItem.frame.origin = CGPointMake(x, 0)
+            blockItem.frame.origin = CGPoint(x: x, y: 0)
             x += 50
             currentWord += blockItem.letterLabel.text!
             blockHolder.addSubview(block)

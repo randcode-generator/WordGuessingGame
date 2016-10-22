@@ -21,7 +21,7 @@ class HelpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func closeButtonAction(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closeButtonAction(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

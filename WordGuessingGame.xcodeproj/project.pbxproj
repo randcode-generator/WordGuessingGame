@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		078AF19F1D87A9300042AA6B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AF19E1D87A9300042AA6B /* HelpViewController.swift */; };
-		07C83AEE1D878780009955BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83AED1D878780009955BE /* AppDelegate.swift */; };
-		07C83AF01D878780009955BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83AEF1D878780009955BE /* ViewController.swift */; };
-		07C83AF31D878780009955BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C83AF11D878780009955BE /* Main.storyboard */; };
-		07C83AF51D878780009955BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C83AF41D878780009955BE /* Assets.xcassets */; };
-		07C83AF81D878780009955BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C83AF61D878780009955BE /* LaunchScreen.storyboard */; };
-		07C83B021D8788D8009955BE /* BlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83AFF1D8788D8009955BE /* BlockManager.swift */; };
-		07C83B031D8788D8009955BE /* BlockUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83B001D8788D8009955BE /* BlockUIView.swift */; };
-		07C83B041D8788D8009955BE /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C83B011D8788D8009955BE /* WordList.swift */; };
+		073248831DBAF360003BFC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073248811DBAF360003BFC01 /* Main.storyboard */; };
+		073248851DBAF360003BFC01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073248841DBAF360003BFC01 /* Assets.xcassets */; };
+		073248881DBAF360003BFC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073248861DBAF360003BFC01 /* LaunchScreen.storyboard */; };
+		076D7DC41DBAF3F300574471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732487D1DBAF360003BFC01 /* AppDelegate.swift */; };
+		076D7DC51DBAF3F300574471 /* BlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D7DBC1DBAF39E00574471 /* BlockManager.swift */; };
+		076D7DC61DBAF3F300574471 /* BlockUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D7DBD1DBAF39E00574471 /* BlockUIView.swift */; };
+		076D7DC71DBAF3F300574471 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D7DBE1DBAF39E00574471 /* HelpViewController.swift */; };
+		076D7DC81DBAF3F300574471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732487F1DBAF360003BFC01 /* ViewController.swift */; };
+		076D7DC91DBAF3F300574471 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D7DBF1DBAF39E00574471 /* WordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		078AF19E1D87A9300042AA6B /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		07C83AEA1D878780009955BE /* WordGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07C83AED1D878780009955BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C83AEF1D878780009955BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07C83AF21D878780009955BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07C83AF41D878780009955BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07C83AF71D878780009955BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07C83AF91D878780009955BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07C83AFF1D8788D8009955BE /* BlockManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockManager.swift; sourceTree = "<group>"; };
-		07C83B001D8788D8009955BE /* BlockUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockUIView.swift; sourceTree = "<group>"; };
-		07C83B011D8788D8009955BE /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		0732487A1DBAF360003BFC01 /* WordGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0732487D1DBAF360003BFC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0732487F1DBAF360003BFC01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		073248821DBAF360003BFC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		073248841DBAF360003BFC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		073248871DBAF360003BFC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		073248891DBAF360003BFC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076D7DBC1DBAF39E00574471 /* BlockManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockManager.swift; sourceTree = "<group>"; };
+		076D7DBD1DBAF39E00574471 /* BlockUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockUIView.swift; sourceTree = "<group>"; };
+		076D7DBE1DBAF39E00574471 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		076D7DBF1DBAF39E00574471 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07C83AE71D878780009955BE /* Frameworks */ = {
+		073248771DBAF360003BFC01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,35 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07C83AE11D878780009955BE = {
+		073248711DBAF360003BFC01 = {
 			isa = PBXGroup;
 			children = (
-				07C83AEC1D878780009955BE /* WordGuessingGame */,
-				07C83AEB1D878780009955BE /* Products */,
+				0732487C1DBAF360003BFC01 /* WordGuessingGame */,
+				0732487B1DBAF360003BFC01 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		07C83AEB1D878780009955BE /* Products */ = {
+		0732487B1DBAF360003BFC01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07C83AEA1D878780009955BE /* WordGuessingGame.app */,
+				0732487A1DBAF360003BFC01 /* WordGuessingGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07C83AEC1D878780009955BE /* WordGuessingGame */ = {
+		0732487C1DBAF360003BFC01 /* WordGuessingGame */ = {
 			isa = PBXGroup;
 			children = (
-				07C83AED1D878780009955BE /* AppDelegate.swift */,
-				07C83AF41D878780009955BE /* Assets.xcassets */,
-				07C83AFF1D8788D8009955BE /* BlockManager.swift */,
-				07C83B001D8788D8009955BE /* BlockUIView.swift */,
-				078AF19E1D87A9300042AA6B /* HelpViewController.swift */,
-				07C83AF91D878780009955BE /* Info.plist */,
-				07C83AF61D878780009955BE /* LaunchScreen.storyboard */,
-				07C83AF11D878780009955BE /* Main.storyboard */,
-				07C83AEF1D878780009955BE /* ViewController.swift */,
-				07C83B011D8788D8009955BE /* WordList.swift */,
+				0732487D1DBAF360003BFC01 /* AppDelegate.swift */,
+				073248841DBAF360003BFC01 /* Assets.xcassets */,
+				076D7DBC1DBAF39E00574471 /* BlockManager.swift */,
+				076D7DBD1DBAF39E00574471 /* BlockUIView.swift */,
+				076D7DBE1DBAF39E00574471 /* HelpViewController.swift */,
+				073248891DBAF360003BFC01 /* Info.plist */,
+				073248861DBAF360003BFC01 /* LaunchScreen.storyboard */,
+				073248811DBAF360003BFC01 /* Main.storyboard */,
+				0732487F1DBAF360003BFC01 /* ViewController.swift */,
+				076D7DBF1DBAF39E00574471 /* WordList.swift */,
 			);
 			path = WordGuessingGame;
 			sourceTree = "<group>";
@@ -79,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07C83AE91D878780009955BE /* WordGuessingGame */ = {
+		073248791DBAF360003BFC01 /* WordGuessingGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07C83AFC1D878780009955BE /* Build configuration list for PBXNativeTarget "WordGuessingGame" */;
+			buildConfigurationList = 0732488C1DBAF361003BFC01 /* Build configuration list for PBXNativeTarget "WordGuessingGame" */;
 			buildPhases = (
-				07C83AE61D878780009955BE /* Sources */,
-				07C83AE71D878780009955BE /* Frameworks */,
-				07C83AE81D878780009955BE /* Resources */,
+				073248761DBAF360003BFC01 /* Sources */,
+				073248771DBAF360003BFC01 /* Frameworks */,
+				073248781DBAF360003BFC01 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -93,25 +93,26 @@
 			);
 			name = WordGuessingGame;
 			productName = WordGuessingGame;
-			productReference = 07C83AEA1D878780009955BE /* WordGuessingGame.app */;
+			productReference = 0732487A1DBAF360003BFC01 /* WordGuessingGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		07C83AE21D878780009955BE /* Project object */ = {
+		073248721DBAF360003BFC01 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Eric;
 				TargetAttributes = {
-					07C83AE91D878780009955BE = {
-						CreatedOnToolsVersion = 7.3.1;
+					073248791DBAF360003BFC01 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 07C83AE51D878780009955BE /* Build configuration list for PBXProject "WordGuessingGame" */;
+			buildConfigurationList = 073248751DBAF360003BFC01 /* Build configuration list for PBXProject "WordGuessingGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,58 +120,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 07C83AE11D878780009955BE;
-			productRefGroup = 07C83AEB1D878780009955BE /* Products */;
+			mainGroup = 073248711DBAF360003BFC01;
+			productRefGroup = 0732487B1DBAF360003BFC01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07C83AE91D878780009955BE /* WordGuessingGame */,
+				073248791DBAF360003BFC01 /* WordGuessingGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		07C83AE81D878780009955BE /* Resources */ = {
+		073248781DBAF360003BFC01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C83AF81D878780009955BE /* LaunchScreen.storyboard in Resources */,
-				07C83AF51D878780009955BE /* Assets.xcassets in Resources */,
-				07C83AF31D878780009955BE /* Main.storyboard in Resources */,
+				073248881DBAF360003BFC01 /* LaunchScreen.storyboard in Resources */,
+				073248851DBAF360003BFC01 /* Assets.xcassets in Resources */,
+				073248831DBAF360003BFC01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07C83AE61D878780009955BE /* Sources */ = {
+		073248761DBAF360003BFC01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C83B031D8788D8009955BE /* BlockUIView.swift in Sources */,
-				078AF19F1D87A9300042AA6B /* HelpViewController.swift in Sources */,
-				07C83AF01D878780009955BE /* ViewController.swift in Sources */,
-				07C83AEE1D878780009955BE /* AppDelegate.swift in Sources */,
-				07C83B021D8788D8009955BE /* BlockManager.swift in Sources */,
-				07C83B041D8788D8009955BE /* WordList.swift in Sources */,
+				076D7DC41DBAF3F300574471 /* AppDelegate.swift in Sources */,
+				076D7DC51DBAF3F300574471 /* BlockManager.swift in Sources */,
+				076D7DC61DBAF3F300574471 /* BlockUIView.swift in Sources */,
+				076D7DC71DBAF3F300574471 /* HelpViewController.swift in Sources */,
+				076D7DC81DBAF3F300574471 /* ViewController.swift in Sources */,
+				076D7DC91DBAF3F300574471 /* WordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07C83AF11D878780009955BE /* Main.storyboard */ = {
+		073248811DBAF360003BFC01 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07C83AF21D878780009955BE /* Base */,
+				073248821DBAF360003BFC01 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		07C83AF61D878780009955BE /* LaunchScreen.storyboard */ = {
+		073248861DBAF360003BFC01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07C83AF71D878780009955BE /* Base */,
+				073248871DBAF360003BFC01 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +179,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		07C83AFA1D878780009955BE /* Debug */ = {
+		0732488A1DBAF361003BFC01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,10 +191,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -215,16 +219,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		07C83AFB1D878780009955BE /* Release */ = {
+		0732488B1DBAF361003BFC01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,10 +241,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -255,15 +263,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		07C83AFD1D878780009955BE /* Debug */ = {
+		0732488D1DBAF361003BFC01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -271,10 +280,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eric.WordGuessingGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		07C83AFE1D878780009955BE /* Release */ = {
+		0732488E1DBAF361003BFC01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -282,31 +292,32 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eric.WordGuessingGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07C83AE51D878780009955BE /* Build configuration list for PBXProject "WordGuessingGame" */ = {
+		073248751DBAF360003BFC01 /* Build configuration list for PBXProject "WordGuessingGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07C83AFA1D878780009955BE /* Debug */,
-				07C83AFB1D878780009955BE /* Release */,
+				0732488A1DBAF361003BFC01 /* Debug */,
+				0732488B1DBAF361003BFC01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07C83AFC1D878780009955BE /* Build configuration list for PBXNativeTarget "WordGuessingGame" */ = {
+		0732488C1DBAF361003BFC01 /* Build configuration list for PBXNativeTarget "WordGuessingGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07C83AFD1D878780009955BE /* Debug */,
-				07C83AFE1D878780009955BE /* Release */,
+				0732488D1DBAF361003BFC01 /* Debug */,
+				0732488E1DBAF361003BFC01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 07C83AE21D878780009955BE /* Project object */;
+	rootObject = 073248721DBAF360003BFC01 /* Project object */;
 }

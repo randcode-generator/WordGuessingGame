@@ -9,7 +9,7 @@
 import UIKit
 
 protocol BlockUIViewDelegate: class {
-    func didTouchBucket(block: BlockUIView, origin: CGPoint) -> Bool;
+    func didTouchBucket(_ block: BlockUIView, origin: CGPoint) -> Bool;
 }
 
 class BlockUIView: UIView {
@@ -21,16 +21,16 @@ class BlockUIView: UIView {
     init(letter: String) {
         let x = CGFloat(arc4random_uniform(300)) + 10
         let y = CGFloat(arc4random_uniform(300)) + 10
-        super.init(frame: CGRectMake(x, y, 45, 45));
+        super.init(frame: CGRect(x: x, y: y, width: 45, height: 45));
         
         backgroundImage.image = UIImage(named: "wood");
-        backgroundImage.frame = CGRectMake(0, 0, 45, 45);
+        backgroundImage.frame = CGRect(x: 0, y: 0, width: 45, height: 45);
     
         letterLabel.text = letter;
-        letterLabel.font = letterLabel.font.fontWithSize(32);
-        letterLabel.textAlignment = NSTextAlignment.Center;
-        letterLabel.textColor = UIColor.whiteColor();
-        letterLabel.frame = CGRectMake(0, 0, 45, 45);
+        letterLabel.font = letterLabel.font.withSize(32);
+        letterLabel.textAlignment = NSTextAlignment.center;
+        letterLabel.textColor = UIColor.white;
+        letterLabel.frame = CGRect(x: 0, y: 0, width: 45, height: 45);
     
         addSubview(backgroundImage);
         addSubview(letterLabel);
@@ -40,13 +40,13 @@ class BlockUIView: UIView {
         super.init(coder: aDecoder)
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if shouldListenToEvents == false {
             return;
         }
         
         let touch = touches.first;
-        let point = touch?.locationInView(self.superview);
+        let point = touch?.location(in: self.superview);
         self.center = point!;
         let didtouch = delegate?.didTouchBucket(self, origin: self.frame.origin);
         if (didtouch != nil && didtouch == true) {

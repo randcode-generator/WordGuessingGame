@@ -25,22 +25,22 @@ class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegat
     @IBOutlet weak var bucketImage: UIImageView!
     @IBOutlet weak var blockHolder: UIView!
     
-    @IBAction func startOverAction(sender: AnyObject) {
+    @IBAction func startOverAction(_ sender: AnyObject) {
         startOver()
     }
     
-    @IBAction func newWordAction(sender: AnyObject) {
+    @IBAction func newWordAction(_ sender: AnyObject) {
         newWord()
     }
     
     func colorAndBorderButton() {
         newWordButton.layer.cornerRadius = 10;
         newWordButton.layer.borderWidth = 2;
-        newWordButton.layer.borderColor = UIColor.blueColor().CGColor
+        newWordButton.layer.borderColor = UIColor.blue.cgColor
         
         StartOverButton.layer.cornerRadius = 10;
         StartOverButton.layer.borderWidth = 2;
-        StartOverButton.layer.borderColor = UIColor.blueColor().CGColor
+        StartOverButton.layer.borderColor = UIColor.blue.cgColor
     }
     
     func newWord() {
@@ -82,7 +82,7 @@ class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegat
         }
     }
     
-    func didTouchBucket(block: BlockUIView, origin: CGPoint) -> Bool {
+    func didTouchBucket(_ block: BlockUIView, origin: CGPoint) -> Bool {
         if origin.x >= bucketImage.frame.origin.x &&
             origin.x <= bucketImage.frame.origin.x + bucketImage.frame.size.width &&
             origin.y >= bucketImage.frame.origin.y &&
@@ -95,10 +95,10 @@ class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegat
     }
     
     func wordMatched() {
-        let alert = UIAlertController(title: "You Won", message: "Word Matched", preferredStyle: UIAlertControllerStyle.Alert)
-        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let alert = UIAlertController(title: "You Won", message: "Word Matched", preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
