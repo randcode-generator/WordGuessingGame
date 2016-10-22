@@ -13,7 +13,7 @@ protocol BlockManagerDelegate: class {
 }
 
 class BlockManager {
-    var startingX:CGFloat = 50.0
+    var startingX:Double = 50.0
     var blocks: [BlockUIView] = []
     var word = "";
     var currentWord = ""
@@ -29,6 +29,9 @@ class BlockManager {
         blocks.append(block)
         
         currentWord = ""
+        let screenWidth: CGFloat = UIScreen.main.bounds.size.width
+        
+        startingX = (Double(screenWidth) / 2.0) - ((Double(blocks.count) / 2.0) * 50.0)
         var x = startingX
         for blockItem in blocks {
             blockItem.frame.origin = CGPoint(x: x, y: 0)
