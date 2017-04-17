@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071E51011EA51B2A00D80895 /* BoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E51001EA51B2A00D80895 /* BoardManager.swift */; };
 		073248831DBAF360003BFC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073248811DBAF360003BFC01 /* Main.storyboard */; };
 		073248851DBAF360003BFC01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073248841DBAF360003BFC01 /* Assets.xcassets */; };
 		073248881DBAF360003BFC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073248861DBAF360003BFC01 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071E51001EA51B2A00D80895 /* BoardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardManager.swift; sourceTree = "<group>"; };
 		0732487A1DBAF360003BFC01 /* WordGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0732487D1DBAF360003BFC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0732487F1DBAF360003BFC01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				073248841DBAF360003BFC01 /* Assets.xcassets */,
 				076D7DBC1DBAF39E00574471 /* BlockManager.swift */,
 				076D7DBD1DBAF39E00574471 /* BlockUIView.swift */,
+				071E51001EA51B2A00D80895 /* BoardManager.swift */,
 				076D7DBE1DBAF39E00574471 /* HelpViewController.swift */,
 				073248891DBAF360003BFC01 /* Info.plist */,
 				073248861DBAF360003BFC01 /* LaunchScreen.storyboard */,
@@ -103,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Eric;
 				TargetAttributes = {
 					073248791DBAF360003BFC01 = {
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071E51011EA51B2A00D80895 /* BoardManager.swift in Sources */,
 				076D7DC41DBAF3F300574471 /* AppDelegate.swift in Sources */,
 				076D7DC51DBAF3F300574471 /* BlockManager.swift in Sources */,
 				076D7DC61DBAF3F300574471 /* BlockUIView.swift in Sources */,
@@ -197,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -247,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

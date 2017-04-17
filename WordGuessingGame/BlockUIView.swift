@@ -1,6 +1,6 @@
 //
 //  BlockUIView.swift
-//  WordMaker
+//  WordGuessingGame
 //
 //  Created by Eric on 9/12/16.
 //  Copyright © 2016 Eric. All rights reserved.

@@ -10,20 +10,21 @@ import UIKit
 
 class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegate {
     
-    var blockManager: BlockManager?
-    var wordList: WordList = WordList()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        colorAndBorderButton()
-        startOver()
-    }
-    
     @IBOutlet weak var newWordButton: UIButton!
     @IBOutlet weak var StartOverButton: UIButton!
     @IBOutlet weak var bucketImage: UIImageView!
     @IBOutlet weak var blockHolder: UIView!
+    @IBOutlet weak var blockHolderWidth: NSLayoutConstraint!
+    
+    var blockManager: BlockManager?
+    var boardManager: BoardManager?
+    var wordList: WordList = WordList()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        colorAndBorderButton()
+        startOver()
+    }
     
     @IBAction func startOverAction(_ sender: AnyObject) {
         startOver()
@@ -58,35 +59,26 @@ class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegat
         let word = wordList.getRandomWord()
         let wordArray = wordList.getRandomWordAsArray()
         
-        blockManager = BlockManager(word: word, blockHolder: blockHolder)
-        blockManager!.delegate = self
-        let letterArray: [String] = wordArray
+        blockManager = BlockManager(word: word, blockHolder: blockHolder, widthConstraint: blockHolderWidth)
+        blockManager?.delegate = self
         
-        for letter in letterArray {
-            let block: BlockUIView = BlockUIView(letter: letter)
-            block.delegate = self
-            self.view.addSubview(block)
-        }
+        boardManager = BoardManager(
+            viewController: self,
+            boardUIView: self.view,
+            wordArray: wordArray)
     }
     
     func removeAllBlocks() {
-        for block in self.view.subviews {
-            if block is BlockUIView {
-                block.removeFromSuperview()
-            }
-        }
-        for block in blockHolder.subviews {
-            if block is BlockUIView {
-                block.removeFromSuperview()
-            }
-        }
+        boardManager?.removeAll()
+        blockManager?.removeAll()
     }
     
     func didTouchBucket(_ block: BlockUIView, origin: CGPoint) -> Bool {
-        if origin.x >= bucketImage.frame.origin.x &&
+        let converted = bucketImage.convert(bucketImage.frame.origin, to: bucketImage.superview!.superview!)
+        if origin.x >= converted.x &&
             origin.x <= bucketImage.frame.origin.x + bucketImage.frame.size.width &&
-            origin.y >= bucketImage.frame.origin.y &&
-            origin.y <= bucketImage.frame.origin.y + bucketImage.frame.size.height
+            origin.y >= converted.y &&
+            origin.y <= converted.y + bucketImage.frame.size.height
         {
             blockManager!.add(block);
             return true;
