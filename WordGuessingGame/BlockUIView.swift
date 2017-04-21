@@ -8,15 +8,10 @@
 
 import UIKit
 
-protocol BlockUIViewDelegate: class {
-    func didTouchBucket(_ block: BlockUIView, origin: CGPoint) -> Bool;
-}
-
 class BlockUIView: UIView {
     var shouldListenToEvents: Bool = true;
     let letterLabel: UILabel = UILabel();
     let backgroundImage: UIImageView = UIImageView();
-    weak var delegate: BlockUIViewDelegate?
     
     init(letter: String) {
         let screenWidth: CGFloat = UIScreen.main.bounds.size.width
@@ -49,19 +44,5 @@ class BlockUIView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if shouldListenToEvents == false {
-            return;
-        }
-        
-        let touch = touches.first;
-        let point = touch?.location(in: self.superview);
-        self.center = point!;
-        let didtouch = delegate?.didTouchBucket(self, origin: self.frame.origin);
-        if (didtouch != nil && didtouch == true) {
-            shouldListenToEvents = false;
-        }
     }
 }

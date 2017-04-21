@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, BlockUIViewDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var newWordButton: UIButton!
     @IBOutlet weak var StartOverButton: UIButton!
@@ -59,16 +59,17 @@ class ViewController: UIViewController, BlockUIViewDelegate {
         let word = wordList.getRandomWord()
         let wordArray = wordList.getRandomWordAsArray()
         
+        boardManager = BoardManager(
+            viewController: self,
+            boardUIView: self.view,
+            wordArray: wordArray)
+        
         blockManager = BlockManager(
             viewController: self,
             word: word,
             blockHolder: blockHolder,
             widthConstraint: blockHolderWidth)
-        
-        boardManager = BoardManager(
-            viewController: self,
-            boardUIView: self.view,
-            wordArray: wordArray)
+        blockManager?.setRuntime(runtime: (boardManager?.getRuntime())!)
     }
     
     func removeAllBlocks() {
@@ -76,7 +77,7 @@ class ViewController: UIViewController, BlockUIViewDelegate {
         blockManager?.removeAll()
     }
     
-    func didTouchBucket(_ block: BlockUIView, origin: CGPoint) -> Bool {
+    public func didTouchBucket(_ block: BlockUIView, origin: CGPoint) {
         let converted = bucketImage.convert(bucketImage.frame.origin, to: bucketImage.superview!.superview!)
         if origin.x >= converted.x &&
             origin.x <= bucketImage.frame.origin.x + bucketImage.frame.size.width &&
@@ -84,9 +85,7 @@ class ViewController: UIViewController, BlockUIViewDelegate {
             origin.y <= converted.y + bucketImage.frame.size.height
         {
             blockManager!.add(block);
-            return true;
         }
-        return false;
     }
     
     override func didReceiveMemoryWarning() {

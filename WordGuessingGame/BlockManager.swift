@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MaterialMotion
 
 class BlockManager {
     var blocks: [BlockUIView] = []
@@ -15,6 +16,7 @@ class BlockManager {
     let viewController: UIViewController!
     let blockHolder: UIView!
     let blockHolderWidth: NSLayoutConstraint!
+    var runtime: MotionRuntime! = nil
     
     init(
       viewController:UIViewController,
@@ -27,13 +29,31 @@ class BlockManager {
         self.blockHolderWidth = widthConstraint
     }
     
+    func setRuntime(runtime: MotionRuntime) {
+        self.runtime = runtime
+    }
+    
     func add(_ block: BlockUIView) {
+        block.frame.origin = CGPoint(x: 0, y: 0)
+        block.removeFromSuperview()
+        
+        let interactions = runtime.interactions(for: block) {
+            $0 as? Draggable
+        };
+            
+        for(_, value) in interactions.enumerated() {
+            value.enabled.value = false
+        }
         blocks.append(block)
         
         currentWord = ""
         var width = CGFloat(0)
         for blockItem in blocks {
-            blockItem.frame.origin = CGPoint(x: width, y: 0)
+            let arcMove = ArcMove()
+            arcMove.from.value = blockItem.frame.origin
+            arcMove.to.value = CGPoint(x: width, y: 0)
+            runtime.add(arcMove, to: blockItem)
+            runtime.get(blockItem.layer).anchorPoint.value = CGPoint(x: 0, y: 0)
             width += 50
             currentWord += blockItem.letterLabel.text!
             blockHolder.addSubview(block)
