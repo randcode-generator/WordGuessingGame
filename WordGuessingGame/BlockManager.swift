@@ -8,19 +8,20 @@
 
 import UIKit
 
-protocol BlockManagerDelegate: class {
-    func wordMatched()
-}
-
 class BlockManager {
     var blocks: [BlockUIView] = []
     var word = "";
     var currentWord = ""
-    weak var delegate: BlockManagerDelegate?
+    let viewController: UIViewController!
     let blockHolder: UIView!
     let blockHolderWidth: NSLayoutConstraint!
     
-    init(word: String, blockHolder: UIView, widthConstraint: NSLayoutConstraint) {
+    init(
+      viewController:UIViewController,
+      word: String,
+      blockHolder: UIView,
+      widthConstraint: NSLayoutConstraint) {
+        self.viewController = viewController
         self.word = word
         self.blockHolder = blockHolder
         self.blockHolderWidth = widthConstraint
@@ -39,7 +40,10 @@ class BlockManager {
         }
         blockHolderWidth.constant = width
         if currentWord == word {
-            self.delegate?.wordMatched()
+          let alert = UIAlertController(title: "You Won", message: "Word Matched", preferredStyle: UIAlertControllerStyle.alert)
+          let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+          alert.addAction(action)
+          viewController.present(alert, animated: true, completion: nil)
         }
     }
     

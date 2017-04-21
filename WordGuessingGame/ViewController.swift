@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegate {
+class ViewController: UIViewController, BlockUIViewDelegate {
     
     @IBOutlet weak var newWordButton: UIButton!
     @IBOutlet weak var StartOverButton: UIButton!
@@ -59,8 +59,11 @@ class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegat
         let word = wordList.getRandomWord()
         let wordArray = wordList.getRandomWordAsArray()
         
-        blockManager = BlockManager(word: word, blockHolder: blockHolder, widthConstraint: blockHolderWidth)
-        blockManager?.delegate = self
+        blockManager = BlockManager(
+            viewController: self,
+            word: word,
+            blockHolder: blockHolder,
+            widthConstraint: blockHolderWidth)
         
         boardManager = BoardManager(
             viewController: self,
@@ -84,13 +87,6 @@ class ViewController: UIViewController, BlockUIViewDelegate, BlockManagerDelegat
             return true;
         }
         return false;
-    }
-    
-    func wordMatched() {
-        let alert = UIAlertController(title: "You Won", message: "Word Matched", preferredStyle: UIAlertControllerStyle.alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
